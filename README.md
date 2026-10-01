@@ -1,134 +1,121 @@
-In this project, let's build an **Events** app by applying the concepts we have learned till now.
+# Events
 
-### Refer to the image below:
+A React.js Events application built as part of my frontend development practice. This project demonstrates React component architecture, props, state management, event handling, conditional rendering, and responsive UI development.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/events-output.gif" alt="events output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+## 🚀 Features
 
-### Design Files
+- Display a list of events.
+- Select an event to view its registration status.
+- Dynamically display different registration states:
+  - Yet to Register
+  - Registered
+  - Registrations Closed
+  - No Active Event
+- Reusable React components.
+- Responsive design for different screen sizes.
+- Accessible event images with appropriate `alt` attributes.
 
-<details>
-<summary>Click to view</summary>
+## 🛠️ Tech Stack
 
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - No Active Event](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Yet To Register](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Registered](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png)
-- [Large (Size >= 992px) and Extra Large (Size >= 1200px) - Registrations Closed](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png)
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Roboto Font
 
-</details>
+## 📁 Project Structure
 
-### Set Up Instructions
+```text
+events/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Events/
+│   │   │   ├── index.js
+│   │   │   └── index.css
+│   │   ├── EventItem/
+│   │   │   ├── index.js
+│   │   │   └── index.css
+│   │   └── ActiveEventRegistrationDetails/
+│   │       ├── index.js
+│   │       └── index.css
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-<details>
-<summary>Click to view</summary>
+## ⚙️ Installation
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+Clone the repository:
 
-### Completion Instructions
+```bash
+git clone https://github.com/manisharma-jupudi/Events.git
+```
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+Navigate to the project directory:
 
-The app must have the following functionalities
+```bash
+cd Events
+```
 
-- Initially, the page should have the [No Active Event View](https://assets.ccbp.in/frontend/content/react-js/events-no-active-event-view-output.png)
-- When the image of an event item with `registrationStatus` as `YET_TO_REGISTER` is clicked, then the [Yet To Register View](https://assets.ccbp.in/frontend/content/react-js/events-yet-to-register-view-output.png) should be displayed
-- When the image of an event item with `registrationStatus` as `REGISTERED` is clicked, then the [Registered View](https://assets.ccbp.in/frontend/content/react-js/events-registered-view-output.png) should be displayed
-- When the image of an event item with `registrationStatus` as `REGISTRATIONS_CLOSED` is clicked, then the [Registrations Closed View](https://assets.ccbp.in/frontend/content/react-js/events-registrations-closed-view-output.png) should be displayed
+Install dependencies:
 
-- The `Events` component is provided with `eventsList`. It consists of a list of event objects with the following properties in each event object
+```bash
+npm install
+```
 
-  |        Key         | Data Type |
-  | :----------------: | :-------: |
-  |         id         |  String   |
-  |      imageUrl      |  String   |
-  |        name        |  String   |
-  |      location      |  String   |
-  | registrationStatus |  String   |
+Start the development server:
 
-</details>
+```bash
+npm start
+```
 
-<details>
-<summary>Components Structure</summary>
+## 📸 Event Registration States
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/events-compoment-structure-breakdown.png" alt="component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+The application supports the following event registration states:
 
-</details>
+### Yet to Register
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+Displays the registration option when an event has not yet been registered for.
 
-Use these files to complete the implementation:
+### Registered
 
-- `src/components/Events/index.js`
-- `src/components/Events/index.css`
-- `src/components/EventItem/index.js`
-- `src/components/EventItem/index.css`
-- `src/components/ActiveEventRegistrationDetails/index.js`
-- `src/components/ActiveEventRegistrationDetails/index.css`
-</details>
+Displays the registered status when the user has successfully registered for an event.
 
-### Important Note
+### Registrations Closed
 
-<details>
-<summary>Click to view</summary>
+Displays a message when registration for an event is no longer available.
 
-<br/>
+### No Active Event
 
-**The following instructions are required for the tests to pass**
+Displays the default view before an event is selected.
 
-- The image for each event item should have alt attribute value as **event**
+## 🧩 React Concepts Practiced
 
-</details>
+This project helped me practice:
 
-### Resources
+- React components
+- Props
+- State
+- Event handlers
+- Conditional rendering
+- Lists and keys
+- Component composition
+- Dynamic UI rendering
+- CSS styling
+- Responsive layouts
 
-<details>
-<summary>Image URLs</summary>
+## 🎯 Learning Objective
 
-- [https://assets.ccbp.in/frontend/react-js/events-register-img.png](https://assets.ccbp.in/frontend/react-js/events-register-img.png) alt should be **yet to register**
-- [https://assets.ccbp.in/frontend/react-js/events-regestered-img.png](https://assets.ccbp.in/frontend/react-js/events-regestered-img.png) alt should be **registered**
-- [https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png](https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png) alt should be **registrations closed**
+The main objective of this project is to strengthen my understanding of React fundamentals by building an interactive event registration interface.
 
-</details>
+## 👨‍💻 Author
 
-<details>
-<summary>Colors</summary>
+**Manisharma Jupudi**
 
-<br/>
+GitHub: [manisharma-jupudi](https://github.com/manisharma-jupudi)
 
-<div style="background-color: #64748b; width: 150px; padding: 10px; color: white">Hex: #64748b</div>
-<div style="background-color: #0967d2; width: 150px; padding: 10px; color: white">Hex: #0967d2</div>
-<div style="background-color: #323f4b; width: 150px; padding: 10px; color: white">Hex: #323f4b</div>
-<div style="background-color: #f8fafc; width: 150px; padding: 10px; color: black">Hex: #f8fafc</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #2dd4bf; width: 150px; padding: 10px; color: black">Hex: #2dd4bf</div>
-<div style="background-color: #3a4b63; width: 150px; padding: 10px; color: white">Hex: #3a4b63</div>
-<br/>
-</details>
+---
 
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+> This project was developed as part of React.js coding practice and learning.
