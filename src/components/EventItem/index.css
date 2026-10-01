@@ -1,0 +1,22 @@
+.list-item {
+  width: 40%;
+}
+
+.img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.list-item p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.img-name {
+  font-size: 22px;
+}
+
+.btn-2 {
+  border: none;
+  background-color: transparent;
+}

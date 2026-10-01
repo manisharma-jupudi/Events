@@ -1,0 +1,30 @@
+.main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.events-container {
+  background-color: #3a4b63;
+  padding: 20px;
+  width: 60vw;
+}
+
+.events-container h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.events-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.active-event-container {
+  width: 40vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
